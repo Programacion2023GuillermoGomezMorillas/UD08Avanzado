@@ -26,6 +26,11 @@ public class Conjunto<T> {
         return isInsert;
     }
 
+    /**
+     *
+     * @param element para borrar
+     * @return true si ha borrado o false si no
+     */
     public boolean delete(T element) {
         boolean isTrue = false;
         for (int i = 0; i< array.length; i++) {
@@ -36,6 +41,12 @@ public class Conjunto<T> {
         }
         return isTrue;
     }
+
+    /**
+     *
+     * @param pos
+     * @return valor de la posición introducida
+     */
     public T get(int pos){
         return array[pos];
     }
@@ -48,6 +59,7 @@ public class Conjunto<T> {
         }
         return posicion;
     }
+    //Override
 
     @Override
     public String toString() {
