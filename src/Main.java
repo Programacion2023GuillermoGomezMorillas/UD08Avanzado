@@ -45,10 +45,30 @@ public class Main {
 
         conjunto2.delete(2);
         conjunto2.delete(9);
-
         System.out.println(conjunto2.toString());
 
 
+        Conjunto<Integer> conjunto3 = new Conjunto<>();
+
+        conjunto3.insert(0);
+        conjunto3.insert(1);
+        conjunto3.insert(2);
+        conjunto3.insert(3);
+        conjunto3.insert(4);
+        conjunto3.insert(5);
+        conjunto3.insert(6);
+        conjunto3.insert(7);
+        conjunto3.insert(8);
+        conjunto3.insert(9);
+        conjunto3.delete(2);
+        conjunto3.delete(9);
+
+        if(conjunto2.equals(conjunto3)){
+            System.out.println("Los conjuntos son iguales");
+        }
+        else{
+            System.out.println("Los conjuntos son diferentes");
+        }
 
 
     }

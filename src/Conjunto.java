@@ -72,12 +72,13 @@ public class Conjunto<T> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Conjunto<?> conjunto = (Conjunto<?>) o;
-        return Arrays.equals(array, conjunto.array);
+        for (int i = 0; i< array.length; i++){
+            if(array[i] != ((Conjunto<?>) o).array[i]){
+                return false;
+            }
+        }
+
+        return true;
     }
 
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(array);
-    }
 }
