@@ -69,7 +69,5 @@ public class Main {
         else{
             System.out.println("Los conjuntos son diferentes");
         }
-
-
     }
 }
